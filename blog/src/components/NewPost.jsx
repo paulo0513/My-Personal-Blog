@@ -11,8 +11,8 @@ function NewPost(props) {
   const params = useParams();
 
   useEffect(() => {
-    if (params.id && props.blogPost.length) {
-      const currPost = props.blogPost.find((currPost) => currPost.id === params.id);
+    if (params.id && props.blogPosts.length) {
+      const currPost = props.blogPosts.find((currPost) => currPost.id === params.id);
       if (currPost) {
         setTitle(currPost.fields.title);
         setDate(currPost.fields.date);

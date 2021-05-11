@@ -24,6 +24,8 @@ function App() {
   return (
     <div className="App">
       <Nav />
+      <h1> &lt;paul /&gt; </h1>
+      <h3>Subheading</h3>
       <Route exact path="/">
         <main>
           {blogPosts.map((blogPost) => (

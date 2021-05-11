@@ -17,7 +17,7 @@ function BlogPost(props) {
       <h4>{body}</h4>
       <h4>{date}</h4>
       <button onClick={deletePost}>Delete</button>
-      <Link to={`/edit/${props.blogPost.id}`} />
+      <Link to={`/edit/${props.blogPost.id}`}>edit</Link>
     </div>
   )
 }
