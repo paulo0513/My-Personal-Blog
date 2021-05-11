@@ -1,12 +1,25 @@
 import axios from "axios";
 import { baseBlogURL, config } from "../services";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom"
 
 function NewPost(props) {
 
   const [title, setTitle] = useState("");
-  const [date, setDate] = useState(0)
-  const [body, setBody] = useState("")
+  const [date, setDate] = useState(0);
+  const [body, setBody] = useState("");
+  const params = useParams();
+
+  useEffect(() => {
+    if (params.id && props.blogPost.length) {
+      const currPost = props.blogPost.find((currPost) => blogPost.id === params.id);
+      if (currPost) {
+        setTitle(blogPost.fields.title);
+        setDate(blogPost.fields.date);
+        setBody(blogPost.fields.body)
+      }
+    }
+  }, [props.blogPosts, params.id]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -15,7 +28,12 @@ function NewPost(props) {
       date,
       body,
     }
-    await axios.post(baseBlogURL, { fields: newPost }, config);
+    if (params.id) {
+      const specificURL = `${baseBlogURL}/${params.id}`
+      await axios.put(specificURL, { fields: newPost }, config);
+    } else {
+      await axios.post(baseBlogURL, { fields: newPost }, config);
+    } 
     props.setToggleFetch((curr) => !curr);
   }
 

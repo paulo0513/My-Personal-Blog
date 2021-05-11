@@ -1,4 +1,5 @@
 import axios from "axios"
+import { Link } from "react-router-dom"
 import { baseBlogURL, config } from "../services"
 
 function BlogPost(props) {
@@ -16,6 +17,7 @@ function BlogPost(props) {
       <h4>{body}</h4>
       <h4>{date}</h4>
       <button onClick={deletePost}>Delete</button>
+      <Link to={`/edit/${props.blogPost.id}`} />
     </div>
   )
 }

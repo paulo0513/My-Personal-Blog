@@ -3,6 +3,8 @@ import { Route } from "react-router-dom";
 import { baseBlogURL, config } from "./services";
 import BlogPost from "./components/BlogPost";
 import NewPost from "./components/NewPost";
+import About from "./components/About";
+import Contact from "./components/Contact";
 import axios from "axios";
 import Nav from "./components/Nav.jsx";
 import "./App.css";
@@ -34,6 +36,12 @@ function App() {
       </Route>
       <Route path="/edit/:id">
         <NewPost blogPosts={blogPosts} setToggleFetch={setToggleFetch} />
+      </Route>
+      <Route path="/about">
+        <About />
+      </Route>
+      <Route path="/contact">
+        <Contact />
       </Route>
     </div>
   );
