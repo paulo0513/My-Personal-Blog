@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Route } from "react-router-dom";
-import { baseURL, config } from "./services";
+import { baseBlogURL, config } from "./services";
 import BlogPost from "./components/BlogPost";
+import NewPost from "./components/NewPost";
 import axios from "axios";
 import Nav from "./components/Nav.jsx";
 import "./App.css";
@@ -12,7 +13,7 @@ function App() {
 
   useEffect(() => {
     const fetchBlogPosts = async () => {
-      const resp = await axios.get(baseURL, config);
+      const resp = await axios.get(baseBlogURL, config);
       setBlogPosts(resp.data.records);
     };
     fetchBlogPosts();
@@ -29,10 +30,10 @@ function App() {
         </main>
       </Route>
       <Route path="/new">
-        <h3>This is where our form will go to make our new blog posts</h3>
+        <NewPost blogPosts={blogPosts} setToggleFetch={setToggleFetch} />
       </Route>
       <Route path="/edit/:id">
-        This will be a button to edit our existing posts
+        <NewPost blogPosts={blogPosts} setToggleFetch={setToggleFetch} />
       </Route>
     </div>
   );
