@@ -1,8 +1,22 @@
+import { useEffect, useState } from "react";
 import { Route } from "react-router-dom";
+import { baseURL, config } from "./services";
+import axios from "axios";
 import Nav from "./components/Nav.jsx";
 import "./App.css";
 
 function App() {
+  const [blogPosts, setblogPosts] = useState([]);
+  const [toggleFetch, setToggleFetch] = useState(false);
+
+  useEffect(() => {
+    const fetchBlogPosts = async () => {
+      const resp = await axios.get(baseURL, config);
+      console.log(resp.data.records);
+    };
+    fetchBlogPosts();
+  }, [toggleFetch]);
+
   return (
     <div className="App">
       <Nav />
