@@ -12,11 +12,11 @@ function NewPost(props) {
 
   useEffect(() => {
     if (params.id && props.blogPost.length) {
-      const currPost = props.blogPost.find((currPost) => blogPost.id === params.id);
+      const currPost = props.blogPost.find((currPost) => currPost.id === params.id);
       if (currPost) {
-        setTitle(blogPost.fields.title);
-        setDate(blogPost.fields.date);
-        setBody(blogPost.fields.body)
+        setTitle(currPost.fields.title);
+        setDate(currPost.fields.date);
+        setBody(currPost.fields.body)
       }
     }
   }, [props.blogPosts, params.id]);
