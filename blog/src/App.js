@@ -1,18 +1,19 @@
 import { useEffect, useState } from "react";
 import { Route } from "react-router-dom";
 import { baseURL, config } from "./services";
+import BlogPost from "./components/BlogPost";
 import axios from "axios";
 import Nav from "./components/Nav.jsx";
 import "./App.css";
 
 function App() {
-  const [blogPosts, setblogPosts] = useState([]);
+  const [blogPosts, setBlogPosts] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);
 
   useEffect(() => {
     const fetchBlogPosts = async () => {
       const resp = await axios.get(baseURL, config);
-      console.log(resp.data.records);
+      setBlogPosts(resp.data.records);
     };
     fetchBlogPosts();
   }, [toggleFetch]);
@@ -21,7 +22,11 @@ function App() {
     <div className="App">
       <Nav />
       <Route exact path="/">
-        <h3>This is where we'll find posts</h3>
+        <main>
+          {blogPosts.map((blogPost) => (
+            <BlogPost blogPost={blogPost} setToggleFetch={setToggleFetch} />
+          ))}
+        </main>
       </Route>
       <Route path="/new">
         <h3>This is where our form will go to make our new blog posts</h3>
