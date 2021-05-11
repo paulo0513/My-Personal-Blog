@@ -1,5 +1,5 @@
-import Nav from "./components/Nav";
 import { Route } from "react-router-dom";
+import Nav from "./components/Nav.jsx";
 import "./App.css";
 
 function App() {
@@ -7,16 +7,13 @@ function App() {
     <div className="App">
       <Nav />
       <Route exact path="/">
-        <main>Home</main>
+        <h3>This is where we'll find posts</h3>
       </Route>
-      <Route path="/about">
-        <main>About Me</main>
+      <Route path="/new">
+        <h3>This is where our form will go to make our new blog posts</h3>
       </Route>
-      <Route path="/contact">
-        <main>Contact</main>
-      </Route>
-      <Route path="/post">
-        <main>Post</main>
+      <Route path="/edit/:id">
+        This will be a button to edit our existing posts
       </Route>
     </div>
   );
