@@ -38,10 +38,11 @@ function NewPost(props) {
   }
 
   return (
-    <form class="new-post-form" onSubmit={handleSubmit}>
-      <h2>Publish a New Post</h2>
+    <form className="new-post-form" onSubmit={handleSubmit}>
+      <h2 className="new-header">Publish a New Post</h2>
       <label htmlFor="title"></label>
       <input
+        className="new-title"
         type="text"
         placeholder="Add your title"
         value={title}
@@ -49,19 +50,21 @@ function NewPost(props) {
       />
       <label htmlFor="date"></label>
       <input
+        className="new-date"
         type="date"
-        placeholder="MM/DD/YYY"
+        placeholder="MM/DD/YYYY"
         value={date}
         onChange={(e) => setDate(e.target.value)}
         />
       <label htmlFor="body"></label>
       <textarea
+        className="new-message"
         type="text"
         placeholder="Add your thoughts here..."
         value={body}
         onChange={(e) => setBody(e.target.value)}
       />
-      <button type="submit">Publish</button>
+      <button className="new-publish" type="submit">Publish</button>
     </form>
   )
 }

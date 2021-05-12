@@ -11,10 +11,15 @@ nav {
   grid-area: nav;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 150px;
 }
 
 header {
   grid-area: header;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   border-bottom: 2px solid;
 }
 
@@ -31,31 +36,32 @@ footer {
   margin-right: 30px;
   display: grid;
   grid-template-areas:
-    "title . . body body body"
-    "date . . . . ."
-    "edit delete . . . .";
+    "title . ."
+    "date . ."
+    "edit delete .";
 }
 
-.home-post .title {
+.post-title {
   grid-area: title;
 }
 
-.home-post .body {
-  grid-area: body;
+.post-date {
+  grid-area: date;
 }
 
-.home-post .delete {
-  grid-area: delete;
-}
-
-.home-post .edit {
+.post-edit {
   grid-area: edit;
+}
+
+.post-delete {
+  grid-area: delete;
 }
 
 .contact-form {
   display: grid;
   border-bottom: 2px solid;
   padding-bottom: 30px;
+  grid-gap: 5px;
   margin-top: 40px;
   margin-bottom: 40px;
   margin-right: 30px;
@@ -65,48 +71,51 @@ footer {
     ". . submit";
 }
 
-.about-title {
+.contact-title {
   grid-area: title;
 }
 
-.about-name {
+.contact-name {
   grid-area: name;
+  height: 5px;
 }
 
-.about-email {
+.contact-email {
   grid-area: email;
 }
 
-.about-subject {
+.contact-subject {
   grid-area: subject;
 }
 
-.about-message {
+.contact-message {
   grid-area: message;
+  height: 100px;
 }
 
-.about-message {
+.contact-button {
   grid-area: submit;
 }
 
 .new-post-form {
-  /* padding-bottom: 30px;
+  padding-bottom: 30px;
   margin-top: 40px;
   margin-bottom: 40px;
-  margin-right: 30px; */
+  margin-right: 30px;
+  border-bottom: 2px solid;
   display: grid;
-  width: 400px;
-  height: 400px;
-  /* grid-area: main;
+  grid-gap: 5px;
+  grid-area: main;
   grid-template-areas:
-    "header . title"
-    ". . date"
-    ". . message"
-    ". . publish"; */
+    "header . date"
+    ". title title"
+    ". message message"
+    ". publish publish";
 }
 
 .new-header {
   grid-area: header;
+  margin: 0 auto;
 }
 
 .new-title {
@@ -115,6 +124,10 @@ footer {
 
 .new-date {
   grid-area: date;
+}
+
+.new-message {
+  grid-area: message;
 }
 
 .new-publish {

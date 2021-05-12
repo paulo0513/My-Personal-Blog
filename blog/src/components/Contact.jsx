@@ -21,20 +21,21 @@ function Contact() {
   }
 
   return (
-    <form class="contact-form" onSubmit={handleSubmit}>
-      <h2 class="about-title">Contact Me</h2>
+    <form className="contact-form" onSubmit={handleSubmit}>
+      <h2 className="contact-title">Contact Me</h2>
         <label htmlFor="name" />
         <input
-          class="about-name"
+          className="about-name"
           type="text"
+          height="5px"
           placeholder="Full Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           />
         <label htmlFor="email" />
         <input
-          class="about-email"
           type="text"
+          className="contact-email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -42,7 +43,7 @@ function Contact() {
         <label htmlFor="subject" />
         <input
           type="text"
-          class="about-subject"
+          className="contact-subject"
           placeholder="Subject"
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
@@ -50,12 +51,12 @@ function Contact() {
         <label htmlFor="message" />
         <textarea
           type="text"
-          class="about-message"
+          className="contact-message"
           placeholder="Message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           />
-        <button class="about-button" type="submit">Submit</button>
+        <button class="contact-button" type="submit">Submit</button>
     </form>
   )
 }

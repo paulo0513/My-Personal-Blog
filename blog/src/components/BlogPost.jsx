@@ -13,11 +13,11 @@ function BlogPost(props) {
 
   return (
     <div class="home-posts">
-      <h2 class="title">{title}</h2>
-      <h4 class="body">{body}</h4>
-      <h4 class="date">{date}</h4>
-      <button class="delete"onClick={deletePost}>Delete</button>
-      <Link class="edit" to={`/edit/${props.blogPost.id}`}>edit</Link>
+        <h2 class="post-title">{title}</h2>
+        <h4 class="post-date">{date}</h4>
+        <button class="post-delete"onClick={deletePost}>Delete</button>
+        <Link class="post-edit" to={`/edit/${props.blogPost.id}`}><button>Edit</button></Link>
+        <h4 class="post-body">{body}</h4>
     </div>
   )
 }
