@@ -4,9 +4,119 @@
   text-align: center;
   font-family: "Chivo";
   display: grid;
+  grid-template-areas: "nav header" "nav main" "nav footer";
 }
 
 nav {
+  grid-area: nav;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+}
+
+header {
+  grid-area: header;
+  border-bottom: 2px solid;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.home-posts {
+  grid-area: main;
+  border-bottom: 2px solid;
+  padding-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 30px;
+  display: grid;
+  grid-template-areas:
+    "title . . body body body"
+    "date . . . . ."
+    "edit delete . . . .";
+}
+
+.home-post .title {
+  grid-area: title;
+}
+
+.home-post .body {
+  grid-area: body;
+}
+
+.home-post .delete {
+  grid-area: delete;
+}
+
+.home-post .edit {
+  grid-area: edit;
+}
+
+.contact-form {
+  display: grid;
+  border-bottom: 2px solid;
+  padding-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 30px;
+  grid-area: main;
+  grid-template-areas:
+    "title . name" ". . email" ". . subject" ". . message"
+    ". . submit";
+}
+
+.about-title {
+  grid-area: title;
+}
+
+.about-name {
+  grid-area: name;
+}
+
+.about-email {
+  grid-area: email;
+}
+
+.about-subject {
+  grid-area: subject;
+}
+
+.about-message {
+  grid-area: message;
+}
+
+.about-message {
+  grid-area: submit;
+}
+
+.new-post-form {
+  /* padding-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 30px; */
+  display: grid;
+  width: 400px;
+  height: 400px;
+  /* grid-area: main;
+  grid-template-areas:
+    "header . title"
+    ". . date"
+    ". . message"
+    ". . publish"; */
+}
+
+.new-header {
+  grid-area: header;
+}
+
+.new-title {
+  grid-area: title;
+}
+
+.new-date {
+  grid-area: date;
+}
+
+.new-publish {
+  grid-area: publish;
 }

@@ -38,7 +38,7 @@ function NewPost(props) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form class="new-post-form" onSubmit={handleSubmit}>
       <h2>Publish a New Post</h2>
       <label htmlFor="title"></label>
       <input

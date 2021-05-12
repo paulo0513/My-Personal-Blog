@@ -21,37 +21,41 @@ function Contact() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h2>Contact Me</h2>
-      <label htmlFor="name" />
-      <input
-        type="text"
-        placeholder="Full Name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <label htmlFor="email" />
-      <input
-        type="text"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <label htmlFor="subject" />
-      <input
-        type="text"
-        placeholder="Subject"
-        value={subject}
-        onChange={(e) => setSubject(e.target.value)}
-      />
-      <label htmlFor="message" />
-      <textarea
-        type="text"
-        placeholder="Message"
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-      />
-      <button type="submit">Submit</button>
+    <form class="contact-form" onSubmit={handleSubmit}>
+      <h2 class="about-title">Contact Me</h2>
+        <label htmlFor="name" />
+        <input
+          class="about-name"
+          type="text"
+          placeholder="Full Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          />
+        <label htmlFor="email" />
+        <input
+          class="about-email"
+          type="text"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          />
+        <label htmlFor="subject" />
+        <input
+          type="text"
+          class="about-subject"
+          placeholder="Subject"
+          value={subject}
+          onChange={(e) => setSubject(e.target.value)}
+          />
+        <label htmlFor="message" />
+        <textarea
+          type="text"
+          class="about-message"
+          placeholder="Message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          />
+        <button class="about-button" type="submit">Submit</button>
     </form>
   )
 }

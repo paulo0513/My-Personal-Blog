@@ -12,12 +12,12 @@ function BlogPost(props) {
   const { title, body, date } = props.blogPost.fields
 
   return (
-    <div>
-      <h2>{title}</h2>
-      <h4>{body}</h4>
-      <h4>{date}</h4>
-      <button onClick={deletePost}>Delete</button>
-      <Link to={`/edit/${props.blogPost.id}`}>edit</Link>
+    <div class="home-posts">
+      <h2 class="title">{title}</h2>
+      <h4 class="body">{body}</h4>
+      <h4 class="date">{date}</h4>
+      <button class="delete"onClick={deletePost}>Delete</button>
+      <Link class="edit" to={`/edit/${props.blogPost.id}`}>edit</Link>
     </div>
   )
 }

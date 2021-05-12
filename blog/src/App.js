@@ -24,8 +24,10 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <h1> &lt;paul /&gt; </h1>
-      <h3>(Reactjs ? failed to compile : compiled successfully)</h3>
+      <header>
+        <h1> &lt;paul /&gt; </h1>
+        <h3>(Reactjs ? compiled successfully : failed to compile)</h3>
+      </header>
       <Route exact path="/">
         <main>
           {blogPosts.map((blogPost) => (
@@ -45,6 +47,7 @@ function App() {
       <Route path="/contact">
         <Contact />
       </Route>
+      <footer>this is where my foot will reside</footer>
     </div>
   );
 }
