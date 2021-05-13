@@ -185,3 +185,27 @@ footer {
 .new-publish {
   grid-area: publish;
 }
+
+.about {
+  display: grid;
+  grid-area: main;
+  padding-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 30px;
+  border-bottom: 2px solid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "picture body"
+    "picture body"
+    "picture body"
+    "picture body";
+}
+
+.about-pic {
+  grid-area: picture;
+}
+
+.about-body {
+  grid-area: body;
+}
