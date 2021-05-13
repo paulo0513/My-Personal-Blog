@@ -6,7 +6,9 @@ function About() {
       <h4>
         Oh, hey there! Welcome to my page! If you stumbled across here, you're either lost or curious to hear what I'm all about, so let's dive in.</h4>
       <h4>
-        My name is Paul Oh (Oh? Yes, it's a real lastname and I challenge you to get clever with it because I've heard it all...) and I am a web developer based out of Chicago. I was born in Chicago, raised in Michigan, but made my way back to Illinois in 2016 after I graduated from Michigan State University.
+        My name is Paul Oh (Oh? Yes, it's a real lastname and I 
+        <span class="italic"> challenge </span>
+        you to get clever with it because I've heard it all...) and I am a web developer based out of Chicago. I was born in Chicago, raised in Michigan, but made my way back to Illinois in 2016 after I graduated from Michigan State University.
          
       </h4>
       <h4>

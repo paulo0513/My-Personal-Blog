@@ -4,18 +4,21 @@
   text-align: center;
   font-family: "Chivo";
   display: grid;
-  grid-template-areas: "nav header" "nav main" "nav footer";
+  grid-template-areas: "nav" "header" " main" "footer";
+  margin: 25px;
+}
+
+.italic {
+  font-style: italic;
+  color: red;
 }
 
 nav {
   grid-area: nav;
-  display: grid;
-  grid-template-areas:
-    "home"
-    "new"
-    "about"
-    "contact";
-  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: auto;
 }
 
 .nav-home {
@@ -46,6 +49,7 @@ header {
   grid-area: title;
   display: flex;
   justify-content: flex-start;
+  margin-bottom: -5px;
   font-size: 50px;
 }
 
@@ -67,27 +71,41 @@ footer {
   margin-top: 40px;
   margin-bottom: 40px;
   margin-right: 30px;
+  column-gap: 20px;
   display: grid;
   grid-template-areas:
-    "title . ."
-    "date . ."
-    "edit delete .";
+    "title body"
+    "date body"
+    "edit body"
+    "delete body"
+    ". body"
+    ". body";
 }
 
 .post-title {
   grid-area: title;
+  justify-self: start;
+}
+
+.post-body {
+  grid-area: body;
+  justify-self: start;
 }
 
 .post-date {
   grid-area: date;
+  justify-self: start;
+  font-size: 12px;
 }
 
 .post-edit {
   grid-area: edit;
+  justify-self: start;
 }
 
 .post-delete {
   grid-area: delete;
+  justify-self: start;
 }
 
 .contact-form {
