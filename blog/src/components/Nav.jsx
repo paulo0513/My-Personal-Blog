@@ -4,16 +4,16 @@ function Nav() {
   return (
     <nav>
       <Link to='/'>
-        <button class="home">Home</button>
+        <button className="nav-home">Home</button>
       </Link>
       <Link to='/new'>
-        <button class="new-post">New Post</button>
+        <button className="nav-post">New Post</button>
       </Link>
       <Link to='/about'>
-        <button class="about">About</button>
+        <button className="nav-about">About</button>
       </Link>
       <Link to='/contact'>
-        <button class="contact">Contact</button>
+        <button className="nav-contact">Contact</button>
       </Link>
     </nav>
   )

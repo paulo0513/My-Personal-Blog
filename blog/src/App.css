@@ -9,18 +9,51 @@
 
 nav {
   grid-area: nav;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-areas:
+    "home"
+    "new"
+    "about"
+    "contact";
   width: 150px;
+}
+
+.nav-home {
+  grid-area: home;
+}
+
+.nav-post {
+  grid-area: new;
+}
+
+.nav-about {
+  grid-area: about;
+}
+
+.nav-contact {
+  grid-area: contact;
 }
 
 header {
   grid-area: header;
+  grid-template-areas:
+    "title"
+    "subheader";
+  border-bottom: 2px solid;
+}
+
+.blog-title {
+  grid-area: title;
   display: flex;
   justify-content: flex-start;
-  flex-wrap: wrap;
-  border-bottom: 2px solid;
+  font-size: 50px;
+}
+
+.blog-subheading {
+  grid-area: subheader;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 12px;
 }
 
 footer {
@@ -108,9 +141,9 @@ footer {
   grid-area: main;
   grid-template-areas:
     "header . date"
-    ". title title"
-    ". message message"
-    ". publish publish";
+    ". . title"
+    ". . message"
+    ". . publish";
 }
 
 .new-header {
@@ -128,6 +161,7 @@ footer {
 
 .new-message {
   grid-area: message;
+  height: 100px;
 }
 
 .new-publish {

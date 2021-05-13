@@ -25,8 +25,10 @@ function App() {
     <div className="App">
       <Nav />
       <header>
-        <h1> &lt;paul /&gt; </h1>
-        <h3>(Reactjs ? compiled successfully : failed to compile)</h3>
+        <h1 className="blog-title"> &lt;paul /&gt; </h1>
+        <h3 className="blog-subheading">
+          (Reactjs ? compiled successfully : failed to compile)
+        </h3>
       </header>
       <Route exact path="/">
         <main>
