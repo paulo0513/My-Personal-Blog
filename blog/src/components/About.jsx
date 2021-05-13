@@ -1,3 +1,5 @@
+import Contact from "./Contact";
+
 function About() {
   return (
     <main className="about">
@@ -15,6 +17,9 @@ function About() {
       I began my professional career in sales/account management, but was never entirely fulfilled. That empty feeling led me to pursue a more specialized field in software engineering. And now, here I am showing off all of the new skills I've learned!
       </h4>
       </div>
+      {/* <div className="about-contact">
+        <Contact />
+      </div> */}
     </main>
   )
 }
