@@ -195,11 +195,7 @@ footer {
   margin-right: 30px;
   border-bottom: 2px solid;
   grid-gap: 20px;
-  grid-template-areas:
-    "picture body"
-    "picture body"
-    "picture body"
-    "picture body";
+  grid-template-areas: "picture body";
 }
 
 .about-pic {
@@ -208,4 +204,37 @@ footer {
 
 .about-body {
   grid-area: body;
+}
+
+@media all and (max-width: 414px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .blog-title {
+    font-size: 28px;
+  }
+
+  .home-posts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .new-post-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
 }
