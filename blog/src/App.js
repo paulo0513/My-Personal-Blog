@@ -49,7 +49,7 @@ function App() {
       <Route path="/contact">
         <Contact />
       </Route>
-      <footer>Paul Oh &#169;</footer>
+      <footer>&#169;Paul Oh 2021</footer>
     </div>
   );
 }
