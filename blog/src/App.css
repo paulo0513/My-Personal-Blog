@@ -254,4 +254,13 @@ footer {
     display: flex;
     flex-direction: column;
   }
+
+  .navbar ul li a {
+    padding: 12px;
+  }
+
+  .navbar .brand {
+    padding: 0 12px;
+    font-size: 12px;
+  }
 }
