@@ -1,18 +1,18 @@
 Title: A Personal Space
 
-Description: 
+Description:
 
-Share your voice, your thoughts, and your experiences. This blog was created for those that also want to create. Share the blog with your friends so they can join you in your experiences. This site will give your friends another avenue to connect with you. 
+Share your voice, your thoughts, and your experiences. This blog was created for those that also want to create. Share the blog with your friends so they can join you in your experiences. This site will give your friends another avenue to connect with you.
 
-Wireframes: 
+Wireframes:
 
 https://i.imgur.com/iIEgeNp.png
 
-Component Hierarchy: 
+Component Hierarchy:
 
 https://i.imgur.com/A2rSerc.png
 
-API: 
+API:
 
 ```
 {
@@ -87,50 +87,52 @@ API:
 }
 ```
 
-MVP: 
+MVP:
+
 - Homepage that Get and Post published blog posts
 - Nav bar routing to "Contact Me" and "New Post"
 - Use forms to create blog posts and submit in the "Contact me", both updating Airtable
 - Add ability to edit posts
 
-Post-MVP: 
+Post-MVP:
+
 - Adding comments to each post
-- Creating search function that allows you to filter by year, then month, then date. 
+- Creating search function that allows you to filter by year, then month, then date.
 
-Project Schedule: 
+Project Schedule:
 
-|  Day | Deliverable | Status
-|---|---| ---|
-|May 7| Prompt / Wireframes / API / Timeframes / Project Approval | incomplete
-|May 7-8| Pseudocode / Format React files | incomplete
-|May 10| Get, Set Data on Homepage / New Post Component / Edit Posts | incomplete
-|May 11| Post Contact Info / Contact Component | incomplete
-|May 12| About Me / MVP CSS | incomplete
-|May 13| Complete MVP / Post MVP| incomplete
-|May 14| Presentations | incomplete
+| Day     | Deliverable                                                 | Status     |
+| ------- | ----------------------------------------------------------- | ---------- |
+| May 7   | Prompt / Wireframes / API / Timeframes / Project Approval   | incomplete |
+| May 7-8 | Pseudocode / Format React files                             | incomplete |
+| May 10  | Get, Set Data on Homepage / New Post Component / Edit Posts | incomplete |
+| May 11  | Post Contact Info / Contact Component                       | incomplete |
+| May 12  | About Me / MVP CSS                                          | incomplete |
+| May 13  | Complete MVP / Post MVP                                     | incomplete |
+| May 14  | Presentations                                               | incomplete |
 
-Timeframes: 
+Timeframes:
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Proposal | H | 3hrs| 0hrs | 0hrs |
-| Psuedocode | M | 3hrs| 0hrs | 0hrs |
-| Airtable Setup | H | 2hrs| 0hrs | 0hrs |
-| Creating React App/formatting/Route/Link | H | 2hrs| 0hrs | 0hrs |
-| Get, Set onto Homepage | H | 2hrs| 0hrs | 0hrs |
-| Add New Post Component | H | 2hrs| 0hrs | 0hrs |
-| Edit post from Homepage | H | 2hrs| 0hrs | 0hrs |
-| Add About Me Component | M | 2hrs| 0hrs | 0hrs |
-| Add Contact Component | H | 2hrs| 0hrs | 0hrs |
-| Add CSS styling | M | 4hrs| 0hrs | 0hrs |
-| Add Responsive styling | M | 2hrs| 0hrs | 0hrs |
-| Total | H | 26hrs| 0hrs | 0hrs |
+| Component                                | Priority | Estimated Time | Time Invested | Actual Time |
+| ---------------------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Proposal                                 |    H     |      3hrs      |     6hrs      |    6hrs     |
+| Psuedocode                               |    M     |      3hrs      |     3hrs      |    3hrs     |
+| Airtable Setup                           |    H     |      2hrs      |     2hrs      |    2hrs     |
+| Creating React App/formatting/Route/Link |    H     |      2hrs      |     1hrs      |    1hrs     |
+| Get, Set onto Homepage                   |    H     |      2hrs      |     3hrs      |    3hrs     |
+| Add New Post Component                   |    H     |      2hrs      |     3hrs      |    3hrs     |
+| Edit post from Homepage                  |    H     |      2hrs      |     2hrs      |    2hrs     |
+| Add About Me Component                   |    M     |      2hrs      |     2hrs      |    2hrs     |
+| Add Contact Component                    |    H     |      2hrs      |     2hrs      |    2hrs     |
+| Add CSS styling                          |    M     |      4hrs      |     8hrs      |    8hrs     |
+| Add Responsive styling                   |    M     |      2hrs      |     2hrs      |    2hrs     |
+| Total                                    |    H     |     26hrs      |     34hrs     |    34hrs    |
 
-SWOT Analysis: 
+SWOT Analysis:
 
 Strengths:
 
-Pretty good idea of how I want my app to run, where all of the data will live/render, etc. 
+Pretty good idea of how I want my app to run, where all of the data will live/render, etc.
 
 Weaknesses:
 
@@ -142,4 +144,4 @@ Show off everything I've learned so far in react. I've been practicing CSS a bit
 
 Threats:
 
-Major point of improvement from P1 was time management and not asking for help at the right times. I really pidgeon holed myself the first time around because I tried to complete this project with as minimal help as possible.Do not want to make that mistake again. More than that, just staying on track and letting my timeframes/project schedule and wireframes guide me. 
+Major point of improvement from P1 was time management and not asking for help at the right times. I really pidgeon holed myself the first time around because I tried to complete this project with as minimal help as possible.Do not want to make that mistake again. More than that, just staying on track and letting my timeframes/project schedule and wireframes guide me.

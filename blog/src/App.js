@@ -49,7 +49,7 @@ function App() {
       <Route path="/contact">
         <Contact />
       </Route>
-      <footer>this is where my foot will reside</footer>
+      <footer>Paul Oh &#169;</footer>
     </div>
   );
 }
